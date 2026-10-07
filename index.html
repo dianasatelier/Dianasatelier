@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diana's Atelier | Newborn & Family Photography</title>
+<meta name="description" content="Diana's Atelier – gefühlvolle Newborn-, Baby- und Familienfotografie in Dorsten und NRW.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#f7f3ed;--beige:#e8ddd0;--ink:#302c28;--muted:#7b7067;--line:#ddd2c7;--white:#fffdf9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif;font-weight:300}
+a{text-decoration:none;color:inherit}.top{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:20px 5vw;background:rgba(247,243,237,.88);backdrop-filter:blur(12px);border-bottom:1px solid rgba(221,210,199,.5)}
+.logo{font-family:"Cormorant Garamond",serif;font-size:30px;letter-spacing:.3px}.nav{display:flex;gap:28px;font-size:11px;text-transform:uppercase;letter-spacing:2px}.nav a:hover{opacity:.55}
+.hero{min-height:92vh;display:grid;place-items:center;text-align:center;padding:150px 24px 90px;position:relative}.hero:before{content:"";position:absolute;width:68vw;height:68vw;max-width:720px;max-height:720px;border:1px solid var(--line);border-radius:50%}
+.kicker{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--muted);margin-bottom:18px}.hero h1{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(64px,11vw,150px);line-height:.78;margin:0}.hero h1 span{display:block;font-style:italic;font-weight:400;font-size:.65em;margin-top:16px}.hero p{max-width:480px;margin:30px auto 0;color:var(--muted);font-size:14px;line-height:1.8}
+.section{padding:110px 6vw}.intro{display:grid;grid-template-columns:minmax(280px,460px) 1fr;gap:10vw;align-items:center;max-width:1200px;margin:auto}.portrait{width:100%;aspect-ratio:2/3;object-fit:cover;display:block;filter:saturate(.93)}.intro-copy h2,.contact h2{font-family:"Cormorant Garamond",serif;font-size:clamp(48px,6vw,78px);font-weight:500;line-height:.9;margin:0 0 25px}.intro-copy p{font-family:"Cormorant Garamond",serif;font-size:23px;line-height:1.5;margin:0;color:#5f554d}.small{font-family:"DM Sans",sans-serif!important;font-size:12px!important;line-height:1.9!important;color:var(--muted)!important;margin-top:24px!important}
+.gallery-head{text-align:center;max-width:650px;margin:0 auto 55px}.gallery-head h2{font-family:"Cormorant Garamond",serif;font-size:70px;font-weight:500;margin:0 0 12px}.gallery-head p{color:var(--muted);font-size:13px;line-height:1.8}.gallery{max-width:1250px;margin:auto;columns:3 280px;column-gap:18px}.photo{width:100%;display:block;margin:0 0 18px;break-inside:avoid;cursor:pointer;transition:transform .35s,opacity .35s}.photo:hover{transform:scale(.985);opacity:.92}
+.quote{padding:120px 10vw;text-align:center;background:var(--beige)}.quote p{font-family:"Cormorant Garamond",serif;font-size:clamp(35px,5vw,62px);line-height:1.05;max-width:900px;margin:auto}.quote span{display:block;font-family:"DM Sans",sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-top:28px}
+.contact{max-width:950px;margin:auto;text-align:center}.contact h2{margin-bottom:15px}.contact>p{color:var(--muted);font-size:12px}.contact-grid{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin-top:35px}.contact-card{border:1px solid var(--line);background:rgba(255,253,249,.55);padding:17px 24px;font-size:12px;letter-spacing:.5px;transition:.2s}.contact-card:hover{background:var(--white);transform:translateY(-2px)}.note{margin:45px auto 0;max-width:620px;font-family:"Cormorant Garamond",serif;font-size:21px;line-height:1.55;color:#5e554e}
+footer{padding:35px 6vw;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--muted);font-size:10px;letter-spacing:1.5px;text-transform:uppercase}
+.lightbox{position:fixed;inset:0;background:rgba(35,30,26,.94);display:none;align-items:center;justify-content:center;z-index:30;padding:30px}.lightbox.show{display:flex}.lightbox img{max-width:92vw;max-height:90vh;object-fit:contain}.close{position:fixed;right:25px;top:18px;color:white;border:0;background:none;font-size:38px;font-weight:200;cursor:pointer}
+@media(max-width:750px){.top{padding:16px 20px}.logo{font-size:25px}.nav{gap:14px;font-size:8px}.nav a:nth-child(2){display:none}.hero{min-height:82vh;padding-top:120px}.hero:before{width:100vw;height:100vw}.section{padding:80px 20px}.intro{grid-template-columns:1fr;gap:45px}.intro-copy{text-align:center}.gallery-head h2{font-size:55px}.gallery{columns:2 145px;column-gap:10px}.photo{margin-bottom:10px}.quote{padding:85px 25px}footer{flex-direction:column;gap:10px;text-align:center}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="#home">Diana's Atelier</a>
+  <nav class="nav"><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div>
+    <div class="kicker">Newborn · Baby · Family</div>
+    <h1>Diana's<span>Atelier</span></h1>
+    <p>Gefühlvolle Fotografie für die kleinen Augenblicke, die viel zu schnell groß werden.</p>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="intro">
+    <img class="portrait" src="images/diana-about.jpg" alt="Diana – Diana's Atelier">
+    <div class="intro-copy">
+      <div class="kicker">Introducing myself</div>
+      <h2>Moments that<br>become memories.</h2>
+      <p>Ich bin Diana – Mama von zwei wundervollen Kindern und Fotografin aus Leidenschaft.</p>
+      <p class="small">Als ich meine eigenen Kinder fotografiert habe, habe ich gemerkt, wie wertvoll es ist, diese flüchtigen Momente festzuhalten. Heute möchte ich Familien dabei helfen, genau diese kleinen Augenblicke für immer zu bewahren.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <div class="gallery-head">
+    <div class="kicker">A little glimpse</div>
+    <h2>My Gallery</h2>
+    <p>Neugeborene, erste Familienmomente, Geschwisterliebe und die kleinen Details dazwischen.</p>
+  </div>
+  <div class="gallery">
+    <img class="photo" src="images/gallery-01.jpg" alt="Diana's Atelier – Neugeborenes in zartem Rosé" loading="lazy">
+    <img class="photo" src="images/gallery-02.jpg" alt="Diana's Atelier – Kleine Babyfüße mit Blumen" loading="lazy">
+    <img class="photo" src="images/gallery-03.jpg" alt="Diana's Atelier – Geschwistermoment mit Neugeborenem" loading="lazy">
+    <img class="photo" src="images/gallery-04.jpg" alt="Diana's Atelier – Neugeborenes mit Blumen" loading="lazy">
+    <img class="photo" src="images/gallery-05.jpg" alt="Diana's Atelier – Babyshooting mit Kuscheltieren" loading="lazy">
+    <img class="photo" src="images/gallery-06.jpg" alt="Diana's Atelier – Neugeborenes im traditionellen Outfit" loading="lazy">
+  </div>
+</section>
+
+<section class="quote">
+  <p>“Die kleinen Momente sind oft die, die wir später am meisten vermissen.”</p>
+  <span>Diana's Atelier</span>
+</section>
+
+<section class="section" id="contact">
+  <div class="contact">
+    <div class="kicker">Let's create memories</div>
+    <h2>I'd love to hear from you.</h2>
+    <p>Du möchtest deine Familie, dein Baby oder die ersten Geschwistermomente festhalten?</p>
+    <div class="contact-grid">
+      <a class="contact-card" href="tel:+4917657849288">0176 57849288</a>
+      <a class="contact-card" href="https://wa.me/4917657849288" target="_blank" rel="noopener">WhatsApp</a>
+      <span class="contact-card">Dorsten · NRW</span>
+    </div>
+    <p class="note">P.S. Ich komme gerne zu euch nach Hause. Mir ist wichtig, dass das Shooting leicht, entspannt und ohne den Druck, das Haus verlassen zu müssen, für euch wird.</p>
+  </div>
+</section>
+</main>
+
+<footer><span>© Diana's Atelier</span><span>Dorsten · NRW</span></footer>
+
+<div class="lightbox" id="lightbox"><button class="close" id="close">×</button><img id="lightboxImg" src="" alt=""></div>
+<script>
+document.querySelectorAll('.photo').forEach(img=>img.addEventListener('click',()=>{document.getElementById('lightboxImg').src=img.src;document.getElementById('lightbox').classList.add('show')}));
+document.getElementById('close').onclick=()=>document.getElementById('lightbox').classList.remove('show');
+document.getElementById('lightbox').onclick=e=>{if(e.target.id==='lightbox')document.getElementById('lightbox').classList.remove('show')};
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('lightbox').classList.remove('show')});
+</script>
+</body>
+</html>
